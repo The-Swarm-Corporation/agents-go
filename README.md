@@ -32,7 +32,7 @@ func main() {
 	log.Info().Msg("Starting the autonomous agent...")
 
 	// Initialize the agent with the OpenAI API key and model.
-	agent := NewAgent("sk-proj-nFULo5YbDhjgmOPOysaYT3BlbkFJ2WtN42akJg6gaiX7mNEA", "gpt-3.5-turbo")
+	agent := NewAgent("your_api_key", "gpt-3.5-turbo")
 
 	// Run the agent with the initial task.
 	if err := runAgent(agent, "What are the best ways to establish a non-profit AI research lab"); err != nil {
