@@ -5,7 +5,7 @@ import (
 	"time"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
-    "github.com/kyegomez/agent-go" // Changed this line
+    "agents" // Changed this line
 )
 
 func main() {
@@ -16,10 +16,10 @@ func main() {
 	log.Info().Msg("Starting the autonomous agent...")
 
 	// Initialize the agent with the OpenAI API key and model.
-	agent := NewAgent("api_key", "gpt-3.5-turbo")
+	agent := agents.NewAgent("api_key", "gpt-3.5-turbo")
 
 	// Run the agent with the initial task.
-	if err := runAgent(agent, "What are the best ways to establish a non-profit AI research lab"); err != nil {
+	if err := agents.runAgent(agent, "What are the best ways to establish a non-profit AI research lab"); err != nil {
 		log.Fatal().Err(err).Msg("Agent run failed")
 	}
 }
