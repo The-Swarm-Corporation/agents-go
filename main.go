@@ -5,7 +5,7 @@ import (
 	"time"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
-	"agents/structs"
+    "github.com/kyegomez/agent-go" // Changed this line
 )
 
 func main() {

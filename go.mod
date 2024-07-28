@@ -1,4 +1,4 @@
-module agents
+module github.com/kyegomez/agents-go
 
 go 1.22.5
 
